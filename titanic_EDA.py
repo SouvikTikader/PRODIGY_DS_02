@@ -25,7 +25,7 @@ combined = combined.drop(columns=['Cabin', 'Ticket', 'Name'])
 
 # Encode categorical variables
 combined['Sex'] = combined['Sex'].map({'male': 0, 'female': 1})
-combined = pd.get_dummies(combined, columns=['Embarked'], drop_first=True)
+combined = pd.get_dummies(combined, columns=['Embarked'])
 
 # Split cleaned data
 train_cleaned = combined[combined['TrainSet'] == True].drop(columns=['TrainSet'])
