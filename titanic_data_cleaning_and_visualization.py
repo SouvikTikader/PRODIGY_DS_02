@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import os
 
 # Load datasets
-train_df = pd.read_csv("train.csv")
-test_df = pd.read_csv("test.csv")
+train_df = pd.read_csv("datasets/train.csv")
+test_df = pd.read_csv("datasets/test.csv")
 
 # Mark train/test sets
 train_df['TrainSet'] = True
