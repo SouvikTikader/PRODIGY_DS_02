@@ -1,6 +1,6 @@
 
 
-# 🚢 PRODIGY_DS_02 – Titanic Survival Data Analysis & Visualization
+# 🚢 PRODIGY_DS_02 – Titanic Survival Data Cleaning & Exploratory Data Analysis
 
 This project performs **exploratory data analysis (EDA)** on the Titanic dataset using Python. It visualizes survival trends based on features like **age, sex, class, and fare**, and also includes correlation heatmaps and pairplots to explore feature relationships.
 
@@ -43,7 +43,7 @@ Saved under the `images/` directory:
    ```bash
    git clone https://github.com/SouvikTikader/PRODIGY_DS_02.git
    cd PRODIGY_DS_02
-````
+   ```
 
 2. **Install Required Packages**
 
