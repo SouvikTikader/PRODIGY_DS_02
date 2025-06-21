@@ -54,7 +54,7 @@ Saved under the `images/` directory:
 3. **Run the Script**
 
    ```bash
-   python titanic_eda.py
+   python titanic_EDA.py
    ```
 
 The script will:
