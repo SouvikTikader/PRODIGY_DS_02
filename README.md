@@ -1,5 +1,5 @@
 
-````markdown
+
 # 🚢 PRODIGY_DS_02 – Titanic Survival Data Analysis & Visualization
 
 This project performs **exploratory data analysis (EDA)** on the Titanic dataset using Python. It visualizes survival trends based on features like **age, sex, class, and fare**, and also includes correlation heatmaps and pairplots to explore feature relationships.
