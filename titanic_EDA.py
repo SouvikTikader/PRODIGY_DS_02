@@ -68,6 +68,13 @@ plt.xlabel('Pclass')
 plt.savefig(f"{output_dir}/survival_by_pclass.png",bbox_inches='tight')
 plt.close()
 
+from matplotlib.patches import Patch
+
+legend_handles = [
+    Patch(facecolor='#FF0000', edgecolor='black', label='Died'),
+    Patch(facecolor='#00AA00', edgecolor='black', label='Survived')
+]
+
 # Plot 4: Age Distribution
 plt.figure(figsize=(8, 4))
 sns.histplot(
@@ -84,7 +91,7 @@ plt.xticks(ticks=range(0, 90, 10))
 plt.title('Age Distribution by Survival')
 plt.xlabel('Age')
 plt.ylabel('Count')
-plt.legend(title='Survived', labels=['Died', 'Survived'])
+plt.legend(title='Survived', handles=legend_handles)
 plt.savefig(f"{output_dir}/age_distribution_step_count.png",bbox_inches='tight')
 plt.close()
 
@@ -104,7 +111,7 @@ sns.histplot(
 plt.title('Fare Distribution by Survival')
 plt.xlabel('Fare')
 plt.ylabel('Count')
-plt.legend(title='Survived', labels=['Died', 'Survived'])
+plt.legend(title='Survived', handles=legend_handles)
 plt.xlim(0, 200)
 plt.savefig(f"{output_dir}/fare_distribution_by_survival.png",bbox_inches='tight')
 plt.close()
